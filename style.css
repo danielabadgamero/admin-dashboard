@@ -11,7 +11,7 @@ body,
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: "sidebar header"
     "sidebar dashboard";
 }
@@ -19,6 +19,11 @@ body,
 .sidebar {
     background: linear-gradient(-90deg, #c084fc, #7e22ce);
     grid-area: sidebar;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
 }
 
 .header {
@@ -73,7 +78,12 @@ h1 {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
-    padding-left: 15%;
+    width: 100%;
+    justify-self: right;
+    padding-right: 25%;
+    display: flex;
+    justify-content: right;
+    gap: 5%;
 }
 
 .actions {
@@ -81,7 +91,11 @@ h1 {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
-    padding-left: 15%;
+    justify-self: right;
+    padding-right: 25%;
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
 }
 
 .mag-glass {
@@ -97,4 +111,30 @@ h1 {
     font-size: 1.2em;
     outline: none;
     background-color: #f2e4ff;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: solid 1px #ccc;
+    background-color: #7e22ce;
+    color: #eee;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+li {
+    list-style: none;
+    font-size: 1.1em;
+}
+
+.title {
+    display: flex;
+    font-weight: 900;
+}
+
+ul {
+    line-height: 300%;
+    font-weight: 500;
 }
