@@ -41,6 +41,10 @@ body,
     background-color: rgba(253, 180, 251, 0.5);
     grid-area: dashboard;
     display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    padding: 15px;
 }
 
 h1 {
@@ -137,4 +141,15 @@ li {
 ul {
     line-height: 300%;
     font-weight: 500;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(54, 54, 54);
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+    border-radius: 30px;
+    height: 350px;
 }
