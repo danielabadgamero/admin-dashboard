@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body,
 .container {
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif
 }
 
 .container {
@@ -21,9 +24,18 @@ body,
 .header {
     background-color: #4c7de7;
     grid-area: header;
+    display: flex;
 }
 
 .dashboard {
     background-color: aliceblue;
     grid-area: dashboard;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+#username {
+    font-weight: 900;
 }
