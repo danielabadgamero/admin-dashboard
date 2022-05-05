@@ -17,19 +17,25 @@ body,
 }
 
 .sidebar {
-    background: linear-gradient(#c084fc, #7e22ce);
+    background: linear-gradient(-90deg, #c084fc, #7e22ce);
     grid-area: sidebar;
 }
 
 .header {
-    background-color: #4c7de7;
+    background-color: #f8f8f8;
     grid-area: header;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: left;
+    align-items: center;
+    box-shadow: 0 0 10px 5px darkorchid;
 }
 
 .dashboard {
-    background-color: aliceblue;
+    background-color: rgba(253, 180, 251, 0.5);
     grid-area: dashboard;
+    display: grid;
 }
 
 h1 {
@@ -38,4 +44,57 @@ h1 {
 
 #username {
     font-weight: 900;
+}
+
+.searchbar {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15%;
+}
+
+.greeting {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-left: 15%;
+}
+
+.menu {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-left: 15%;
+}
+
+.actions {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-left: 15%;
+}
+
+.mag-glass {
+    width: 20px;
+}
+
+[type="text"] {
+    border-radius: 20px;
+    border: solid 2px #dfbbff;
+    width: 80%;
+    height: 25%;
+    padding-left: 15px;
+    font-size: 1.2em;
+    outline: none;
+    background-color: #f2e4ff;
 }
